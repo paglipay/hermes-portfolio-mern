@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import { Badge, Button, Card, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import About from './components/About';
+import NavBar from './components/NavBar';
+
 import Skills from './components/Skills';
 import SampleComponents from './components/SampleComponents';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -55,20 +57,7 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="shadow-sm">
-        <Container>
-          <Navbar.Brand as={Link} to="/" className="fw-bold">Paul Aglipay</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
-              <Nav.Link as={Link} to="/samples">Samples</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <NavBar />
       <main className="py-5">
         <Container>
         <Routes>

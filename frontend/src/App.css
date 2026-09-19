@@ -3,6 +3,35 @@ body {
   color: #172033;
 }
 
+.site-header .navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.site-header .nav-link {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: #fff;
+}
+
+.header-cta {
+  margin-left: 0.25rem;
+}
+
 .hero-section {
   background: linear-gradient(135deg, #0b1f3a 0%, #164e63 100%);
   color: #fff;

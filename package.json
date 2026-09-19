@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix backend install && npm --prefix backend run dev"
+    "dev": "concurrently --kill-others-on-fail --names backend,frontend --prefix-colors blue,green \"npm --prefix backend run dev\" \"npm --prefix frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }

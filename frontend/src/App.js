@@ -5,7 +5,9 @@ import About from './components/About';
 import NavBar from './components/NavBar';
 
 import Skills from './components/Skills';
+import Community from './components/Community';
 import SampleComponents from './components/SampleComponents';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -22,6 +24,7 @@ function Home() {
             </p>
             <Button as={Link} to="/about" variant="light" size="lg" className="me-2">Explore the portfolio</Button>
             <Button as={Link} to="/samples" variant="outline-light" size="lg">View Bootstrap samples</Button>
+            <Button as={Link} to="/community" variant="outline-light" size="lg" className="ms-2">Community</Button>
           </Col>
           <Col lg={4}>
             <Card className="border-0 shadow-sm">
@@ -64,6 +67,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/community" element={<Community />} />
           <Route path="/samples" element={<SampleComponents />} />
           <Route path="*" element={<Home />} />
         </Routes>

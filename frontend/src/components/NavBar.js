@@ -16,7 +16,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
             <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
-            <Nav.Link as={NavLink} to="/community">Community</Nav.Link>
+            <Nav.Link as={NavLink} to="/chat">Chat</Nav.Link>
             <Nav.Link as={NavLink} to="/samples">Samples</Nav.Link>
           </Nav>
           <Form className="d-flex align-items-center">

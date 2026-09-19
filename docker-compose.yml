@@ -24,6 +24,9 @@ services:
       - mongo
     environment:
       MONGODB_URI: mongodb://mongo:27017/portfolio
+      HERMES_API_URL: ${HERMES_API_URL:-http://192.168.1.84:8642}
+      HERMES_MODEL: ${HERMES_MODEL:-hermes-agent}
+      HERMES_SESSION_KEY: ${HERMES_SESSION_KEY:-hermes-portfolio-web}
 
   frontend:
     build:

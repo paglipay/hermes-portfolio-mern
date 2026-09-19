@@ -5,7 +5,8 @@ import About from './components/About';
 import NavBar from './components/NavBar';
 
 import Skills from './components/Skills';
-import Community from './components/Community';
+import Chat from './components/Chat';
+
 import SampleComponents from './components/SampleComponents';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -67,7 +68,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/community" element={<Community />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/community" element={<Chat />} />
           <Route path="/samples" element={<SampleComponents />} />
           <Route path="*" element={<Home />} />
         </Routes>

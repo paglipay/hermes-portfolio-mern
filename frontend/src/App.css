@@ -1,0 +1,23 @@
+body {
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0b1f3a 0%, #164e63 100%);
+  color: #fff;
+}
+
+.hero-section .lead {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 42rem;
+}
+
+.showcase-page .card,
+.hero-section .card {
+  border-radius: 0.75rem;
+}
+
+.showcase-page .table {
+  --bs-table-bg: transparent;
+}
